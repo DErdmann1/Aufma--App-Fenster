@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fenster-Formular</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Fenster-Aufmass</h1>
+
+    <form id="fenster-form">
+        <div class="section">
+            <h2>Kunde</h2>
+            <label for="kunde">Name:</label>
+            <input type="text" id="kunde" name="kunde" required><br><br>
+            <label for="adresse">Adresse:</label>
+            <input type="text" id="adresse" name="adresse" required><br><br>
+            <label for="telefon">Telefon:</label>
+            <input type="tel" id="telefon" name="telefon" required><br><br>
+        </div>
+
+        <div class="section">
+            <h2>Fenster</h2>
+            <label for="etage">Etage:</label>
+            <select id="etage" name="etage">
+                <option value="EG">EG</option>
+                <option value="OG">OG</option>
+                <option value="DG">DG</option>
+            </select><br><br>
+            <label for="seite">Seite:</label>
+            <select id="seite" name="seite">
+                <option value="li">Links</option>
+                <option value="re">Rechts</option>
+            </select><br><br>
+            <label for="geruest">Gerüst:</label>
+            <input type="checkbox" id="geruest" name="geruest">
+            <label for="geruest">Benötigt</label><br><br>
+            <label for="zuwegung">Zuwegung:</label>
+            <input type="text" id="zuwegung" name="zuwegung"><br><br>
+            <label for="montage">Montageaufwand:</label>
+            <input type="number" id="montage" name="montage" min="1"><br><br>
+            <label for="psa">PSA:</label>
+            <input type="checkbox" id="psa" name="psa">
+            <label for="psa">Benötigt</label><br><br>
+        </div>
+
+        <div class="section">
+            <h2>Einbauort</h2>
+            <label for="fahrstuhl">Fahrstuhl:</label>
+            <input type="checkbox" id="fahrstuhl" name="fahrstuhl">
+            <label for="fahrstuhl">Vorhanden</label><br><br>
+            <label for="transport">Transport:</label>
+            <input type="checkbox" id="transport" name="transport">
+            <label for="transport">Möglich</label><br><br>
+            <label for="transport_hilfe">Transporthilfe:</label>
+            <input type="checkbox" id="transport_hilfe" name="transport_hilfe">
+            <label for="transport_hilfe">Benötigt</label><br><br>
+            <label for="kraneinhub">Kraneinhub:</label>
+            <input type="checkbox" id="kraneinhub" name="kraneinhub">
+            <label for="kraneinhub">Benötigt</label><br><br>
+            <label for="glas_rahmen">Glas im Rahmen:</label>
+            <input type="checkbox" id="glas_rahmen" name="glas_rahmen">
+            <label for="glas_rahmen">Ja</label><br><br>
+        </div>
+
+        <div class="section">
+            <h2>Fenstertyp</h2>
+            <label for="fenstertyp">Typ:</label>
+            <select id="fenstertyp" name="fenstertyp">
+                <option value="innen">Von innen eingesetzt / stumpf</option>
+                <option value="aussen">Von außen eingesetzt</option>
+            </select><br><br>
+            <label for="dk_fenster">DK-Fenster / DK-Türen:</label>
+            <input type="checkbox" id="dk_fenster" name="dk_fenster">
+            <label for="dk_fenster">Ja</label><br><br>
+            <label for="fest_blr">Fest im BLR / Flg.:</label>
+            <input type="checkbox" id="fest_blr" name="fest_blr">
+            <label for="fest_blr">Ja</label><br><br>
+            <label for="holzleibung">Holzleibung bleibt:</label>
+            <input type="checkbox" id="holzleibung" name="holzleibung">
+            <label for="holzleibung">Ja</label><br><br>
+            <label for="rollladen">Rollladen vorhanden / bleibt innen:</label>
+            <input type="checkbox" id="rollladen" name="rollladen">
+            <label for="rollladen">Ja</label><br><br>
+        </div>
+
+        <div class="section">
+            <h2>Boden</h2>
+            <label for="boden">Art:</label>
+            <select id="boden" name="boden">
+                <option value="klinker">Klinker</option>
+                <option value="putz">Putz</option>
+                <option value="wdvs">WDVS</option>
+                <option value="fliesen">Fliesen</option>
+            </select><br><br>
+        </div>
+
+        <div class="section">
+            <h2>Profil & Farbe</h2>
+            <label for="profil">Profil:</label>
+            <select id="profil" name="profil">
+                <option value="kunststoff">Kunststoff</option>
+                <option value="holz">Holz</option>
+                <option value="alu">Alu</option>
+            </select><br><br>
+            <label for="farbe_i">Farbe innen:</label>
+            <input type="color" id="farbe_i" name="farbe_i"><br><br>
+            <label for="farbe_a">Farbe außen:</label>
+            <input type="color" id="farbe_a" name="farbe_a"><br><br>
+        </div>
+
+        <div class="section">
+            <h2>Weitere Details</h2>
+            <label for="oberlicht">Oberlichtöffner:</label>
+            <input type="checkbox" id="oberlicht" name="oberlicht">
+            <label for="oberlicht">Ja</label><br><br>
+            <label for="terrassentuer">Terrassentür:</label>
+            <input type="checkbox" id="terrassentuer" name="terrassentuer">
+            <label for="terrassentuer">Ja</label><br><br>
+            <label for="dämmprofil">Dämmprofil / Klima Konform:</label>
+            <input type="checkbox" id="dämmprofil" name="dämmprofil">
+            <label for="dämmprofil">Ja</label><br><br>
+            <label for="asbest">Asbest:</label>
+            <input type="checkbox" id="asbest" name="asbest">
+            <label for="asbest">Ja</label><br><br>
+        </div>
+
+        <div class="section">
+            <h2>Maße</h2>
+            <label for="breite">Breite:</label>
+            <input type="number" id="breite" name="breite" min="1"><br><br>
+            <label for="höhe">Höhe:</label>
+            <input type="number" id="höhe" name="höhe" min="1"><br><br>
+        </div>
+
+        <div class="section">
+            <h2>Zusätzliche Angaben</h2>
+            <label for="skizze">Skizze / Sonstiges:</label><br>
+            <textarea id="skizze" name="skizze"></textarea><br><br>
+            <label for="anzahl">Anzahl:</label>
+            <input type="number" id="anzahl" name="anzahl" min="1"><br><br>
+            <label for="anschlag">Anschlag:</label>
+            <select id="anschlag" name="anschlag">
+                <option value="vorne">Vorne</option>
+                <option value="hinten">Hinten</option>
+            </select><br><br>
+            <label for="entwaesserung">Entwässerung:</label>
+            <select id="entwaesserung" name="entwaesserung">
+                <option value="vorne">Vorne</option>
+                <option value="unten">Unten</option>
+            </select><br><br>
+        </div>
+
+        <button type="submit">Senden</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
