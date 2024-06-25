@@ -9,30 +9,29 @@
 <body>
     <div class="container">
         <h1>Fenster-Aufmass</h1>
-
         <form id="fenster-form">
-            <div class="section">
-                <h2 class="underline">Kunde</h2>
-                <label for="kunde"><strong>Name:</strong></label>
-                <input type="text" id="kunde" name="kunde" required><br><br>
-                <label for="adresse"><strong>Adresse:</strong></label>
-                <input type="text" id="adresse" name="adresse" required><br><br>
-                <label for="telefon"><strong>Telefon:</strong></label>
-                <input type="tel" id="telefon" name="telefon" required><br><br>
-            </div>
-
-            <div class="section">
-                <h2 class="underline">Fenster</h2>
-                <label for="etage"><strong>Etage:</strong></label>
-                <select id="etage" name="etage">
-                    <option value="EG">EG</option>
-                    <option value="OG">OG</option>
-                    <option value="DG">DG</option>
-                </select><br><br>
-                <label for="seite"><strong>Seite:</strong></label>
-                <select id="seite" name="seite">
-                    <option value="li">Links</option>
-                    <option value="re">Rechts</option>
+            <div class="grid">
+                <div class="section">
+                    <h2 class="underline">Kunde</h2>
+                    <label for="kunde"><strong>Name:</strong></label>
+                    <input type="text" id="kunde" name="kunde" required>
+                    <label for="adresse"><strong>Adresse:</strong></label>
+                    <input type="text" id="adresse" name="adresse" required>
+                    <label for="telefon"><strong>Telefon:</strong></label>
+                    <input type="tel" id="telefon" name="telefon" required>
+                </div>
+                <div class="section">
+                    <h2 class="underline">Fenster</h2>
+                    <label for="etage"><strong>Etage:</strong></label>
+                    <select id="etage" name="etage">
+                        <option value="EG">EG</option>
+                        <option value="OG">OG</option>
+                        <option value="DG">DG</option>
+                    </select>
+                    <label for="seite"><strong>Seite:</strong></label>
+                    <select id="seite" name="seite">
+                        <option value="li">Links</option>
+                        <option value="re">Rechts</option>
                 </select><br><br>
                 <label for="geruest"><strong>Gerüst:</strong></label>
                 <input type="checkbox" id="geruest" name="geruest">
@@ -159,7 +158,6 @@
                     <option value="unten">Unten</option>
                 </select><br><br>
             </div>
-
             <button type="submit">Senden</button>
         </form>
     </div>
