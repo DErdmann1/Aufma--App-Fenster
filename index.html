@@ -32,133 +32,116 @@
                     <select id="seite" name="seite">
                         <option value="li">Links</option>
                         <option value="re">Rechts</option>
-                </select><br><br>
-                <label for="geruest"><strong>Gerüst:</strong></label>
-                <input type="checkbox" id="geruest" name="geruest">
-                <label for="geruest">Benötigt</label><br><br>
-                <label for="zuwegung"><strong>Zuwegung:</strong></label>
-                <input type="text" id="zuwegung" name="zuwegung"><br><br>
-                <label for="montage"><strong>Montageaufwand:</strong></label>
-                <input type="number" id="montage" name="montage" min="1"><br><br>
-                <label for="psa"><strong>PSA:</strong></label>
-                <input type="checkbox" id="psa" name="psa">
-                <label for="psa">Benötigt</label><br><br>
+                    </select><br><br>
+                    <label for="geruest"><strong>Gerüst:</strong></label>
+                    <input type="checkbox" id="geruest" name="geruest">
+                    <label for="geruest">Benötigt</label><br><br>
+                    <label for="zuwegung"><strong>Zuwegung:</strong></label>
+                    <input type="text" id="zuwegung" name="zuwegung"><br><br>
+                    <label for="montage"><strong>Montageaufwand:</strong></label>
+                    <input type="number" id="montage" name="montage" min="1"><br><br>
+                    <label for="psa"><strong>PSA:</strong></label>
+                    <input type="checkbox" id="psa" name="psa">
+                    <label for="psa">Benötigt</label><br><br>
+                </div>
+                <div class="section">
+                    <h2 class="underline">Einbauort</h2>
+                    <label for="fahrstuhl"><strong>Fahrstuhl:</strong></label>
+                    <input type="checkbox" id="fahrstuhl" name="fahrstuhl">
+                    <label for="fahrstuhl">Vorhanden</label><br><br>
+                    <label for="transport"><strong>Transport:</strong></label>
+                    <input type="checkbox" id="transport" name="transport">
+                    <label for="transport">Möglich</label><br><br>
+                    <label for="transport_hilfe"><strong>Transporthilfe:</strong></label>
+                    <input type="checkbox" id="transport_hilfe" name="transport_hilfe">
+                    <label for="transport_hilfe">Benötigt</label><br><br>
+                    <label for="kraneinhub"><strong>Kraneinhub:</strong></label>
+                    <input type="checkbox" id="kraneinhub" name="kraneinhub">
+                    <label for="kraneinhub">Benötigt</label><br><br>
+                    <label for="glas_rahmen"><strong>Glas im Rahmen:</strong></label>
+                    <input type="checkbox" id="glas_rahmen" name="glas_rahmen">
+                    <label for="glas_rahmen">Ja</label><br><br>
+                </div>
+                <div class="section">
+                    <h2 class="underline">Fenstertyp</h2>
+                    <label for="fenstertyp"><strong>Typ:</strong></label>
+                    <select id="fenstertyp" name="fenstertyp">
+                        <option value="innen">Von innen eingesetzt / stumpf</option>
+                        <option value="aussen">Von außen eingesetzt</option>
+                    </select><br><br>
+                    <label for="dk_fenster"><strong>DK-Fenster / DK-Türen:</strong></label>
+                    <input type="checkbox" id="dk_fenster" name="dk_fenster">
+                    <label for="dk_fenster">Ja</label><br><br>
+                    <label for="fest_blr"><strong>Fest im BLR / Flg.:</strong></label>
+                    <input type="checkbox" id="fest_blr" name="fest_blr">
+                    <label for="fest_blr">Ja</label><br><br>
+                    <label for="holzleibung"><strong>Holzleibung bleibt:</strong></label>
+                    <input type="checkbox" id="holzleibung" name="holzleibung">
+                    <label for="holzleibung">Ja</label><br><br>
+                    <label for="rollladen"><strong>Rollladen vorhanden / bleibt innen:</strong></label>
+                    <input type="checkbox" id="rollladen" name="rollladen">
+                    <label for="rollladen">Ja</label><br><br>
+                </div>
+                <div class="section">
+                    <h2 class="underline">Boden</h2>
+                    <label for="boden"><strong>Art:</strong></label>
+                    <select id="boden" name="boden">
+                        <option value="klinker">Klinker</option>
+                        <option value="putz">Putz</option>
+                        <option value="wdvs">WDVS</option>
+                        <option value="fliesen">Fliesen</option>
+                    </select><br><br>
+                </div>
+                <div class="section">
+                    <h2 class="underline">Profil & Farbe</h2>
+                    <label for="profil"><strong>Profil:</strong></label>
+                    <select id="profil" name="profil">
+                        <option value="kunststoff">Kunststoff</option>
+                        <option value="holz">Holz</option>
+                        <option value="alu">Alu</option>
+                    </select><br><br>
+                    <label for="farbe_i"><strong>Farbe innen:</strong></label>
+                    <input type="color" id="farbe_i" name="farbe_i"><br><br>
+                    <label for="farbe_a"><strong>Farbe außen:</strong></label>
+                    <input type="color" id="farbe_a" name="farbe_a"><br><br>
+                </div>
+                <div class="section">
+                    <h2 class="underline">Weitere Details</h2>
+                    <label for="oberlicht"><strong>Oberlichtöffner:</strong></label>
+                    <input type="checkbox" id="oberlicht" name="oberlicht">
+                    <label for="oberlicht">Ja</label><br><br>
+                    <label for="terrassentuer"><strong>Terrassentür:</strong></label>
+                    <input type="checkbox" id="terrassentuer" name="terrassentuer">
+                    <label for="terrassentuer">Ja</label><br><br>
+                    <label for="dämmprofil"><strong>Dämmprofil / Klima Konform:</strong></label>
+                    <input type="checkbox" id="dämmprofil" name="dämmprofil">
+                    <label for="dämmprofil">Ja</label><br><br>
+                    <label for="asbest"><strong>Asbest:</strong></label>
+                    <input type="checkbox" id="asbest" name="asbest">
+                    <label for="asbest">Ja</label><br><br>
+                </div>
+                <div class="skizze1">    
+                    <img src="img/skizze1.png"/>
+                </div>  
+                <div class="skizze2">    
+                    <img src="img/skizze2.png"/>
+                </div>  
+                <div class="section">
+                    <h2 class="underline">Maße</h2>
+                    <label for="breite"><strong>Breite:</strong></label>
+                    <input type="number" id="breite" name="breite" min="1"><br><br>
+                    <label for="höhe"><strong>Höhe:</strong></label>
+                    <input type="number" id="höhe" name="höhe" min="1"><br><br>
+                </div>
+                <div class="section">
+                    <h2 class="underline">Zusätzliche Angaben</h2>
+                    <label for="skizze"><strong>Skizze / Sonstiges:</strong></label><br>
+                    <textarea id="skizze" name="skizze"></textarea><br><br>
+                    <label for="bild"><strong>Bild:</strong></label>
+                    <input type="file" id="bild" name="bild" accept="image/*"><br><br>
+                </div>
             </div>
-
-            <div class="section">
-                <h2 class="underline">Einbauort</h2>
-                <label for="fahrstuhl"><strong>Fahrstuhl:</strong></label>
-                <input type="checkbox" id="fahrstuhl" name="fahrstuhl">
-                <label for="fahrstuhl">Vorhanden</label><br><br>
-                <label for="transport"><strong>Transport:</strong></label>
-                <input type="checkbox" id="transport" name="transport">
-                <label for="transport">Möglich</label><br><br>
-                <label for="transport_hilfe"><strong>Transporthilfe:</strong></label>
-                <input type="checkbox" id="transport_hilfe" name="transport_hilfe">
-                <label for="transport_hilfe">Benötigt</label><br><br>
-                <label for="kraneinhub"><strong>Kraneinhub:</strong></label>
-                <input type="checkbox" id="kraneinhub" name="kraneinhub">
-                <label for="kraneinhub">Benötigt</label><br><br>
-                <label for="glas_rahmen"><strong>Glas im Rahmen:</strong></label>
-                <input type="checkbox" id="glas_rahmen" name="glas_rahmen">
-                <label for="glas_rahmen">Ja</label><br><br>
-            </div>
-
-            <div class="section">
-                <h2 class="underline">Fenstertyp</h2>
-                <label for="fenstertyp"><strong>Typ:</strong></label>
-                <select id="fenstertyp" name="fenstertyp">
-                    <option value="innen">Von innen eingesetzt / stumpf</option>
-                    <option value="aussen">Von außen eingesetzt</option>
-                </select><br><br>
-                <label for="dk_fenster"><strong>DK-Fenster / DK-Türen:</strong></label>
-                <input type="checkbox" id="dk_fenster" name="dk_fenster">
-                <label for="dk_fenster">Ja</label><br><br>
-                <label for="fest_blr"><strong>Fest im BLR / Flg.:</strong></label>
-                <input type="checkbox" id="fest_blr" name="fest_blr">
-                <label for="fest_blr">Ja</label><br><br>
-                <label for="holzleibung"><strong>Holzleibung bleibt:</strong></label>
-                <input type="checkbox" id="holzleibung" name="holzleibung">
-                <label for="holzleibung">Ja</label><br><br>
-                <label for="rollladen"><strong>Rollladen vorhanden / bleibt innen:</strong></label>
-                <input type="checkbox" id="rollladen" name="rollladen">
-                <label for="rollladen">Ja</label><br><br>
-            </div>
-
-            <div class="section">
-                <h2 class="underline">Boden</h2>
-                <label for="boden"><strong>Art:</strong></label>
-                <select id="boden" name="boden">
-                    <option value="klinker">Klinker</option>
-                    <option value="putz">Putz</option>
-                    <option value="wdvs">WDVS</option>
-                    <option value="fliesen">Fliesen</option>
-                </select><br><br>
-            </div>
-
-            <div class="section">
-                <h2 class="underline">Profil & Farbe</h2>
-                <label for="profil"><strong>Profil:</strong></label>
-                <select id="profil" name="profil">
-                    <option value="kunststoff">Kunststoff</option>
-                    <option value="holz">Holz</option>
-                    <option value="alu">Alu</option>
-                </select><br><br>
-                <label for="farbe_i"><strong>Farbe innen:</strong></label>
-                <input type="color" id="farbe_i" name="farbe_i"><br><br>
-                <label for="farbe_a"><strong>Farbe außen:</strong></label>
-                <input type="color" id="farbe_a" name="farbe_a"><br><br>
-            </div>
-
-            <div class="section">
-                <h2 class="underline">Weitere Details</h2>
-                <label for="oberlicht"><strong>Oberlichtöffner:</strong></label>
-                <input type="checkbox" id="oberlicht" name="oberlicht">
-                <label for="oberlicht">Ja</label><br><br>
-                <label for="terrassentuer"><strong>Terrassentür:</strong></label>
-                <input type="checkbox" id="terrassentuer" name="terrassentuer">
-                <label for="terrassentuer">Ja</label><br><br>
-                <label for="dämmprofil"><strong>Dämmprofil / Klima Konform:</strong></label>
-                <input type="checkbox" id="dämmprofil" name="dämmprofil">
-                <label for="dämmprofil">Ja</label><br><br>
-                <label for="asbest"><strong>Asbest:</strong></label>
-                <input type="checkbox" id="asbest" name="asbest">
-                <label for="asbest">Ja</label><br><br>
-            </div>
-
-            <div class="skizze1">    
-                <img src="img/skizze1.png"/>
-            </div>  
-            <div class="skizze2">    
-                <img src="img/skizze2.png"/>
-            </div>  
-
-            <div class="section">
-                <h2 class="underline">Maße</h2>
-                <label for="breite"><strong>Breite:</strong></label>
-                <input type="number" id="breite" name="breite" min="1"><br><br>
-                <label for="höhe"><strong>Höhe:</strong></label>
-                <input type="number" id="höhe" name="höhe" min="1"><br><br>
-            </div>
-
-            <div class="section">
-                <h2 class="underline">Zusätzliche Angaben</h2>
-                <label for="skizze"><strong>Skizze / Sonstiges:</strong></label><br>
-                <textarea id="skizze" name="skizze"></textarea><br><br>
-                <label for="anzahl"><strong>Anzahl:</strong></label>
-                <input type="number" id="anzahl" name="anzahl" min="1"><br><br>
-                <label for="anschlag"><strong>Anschlag:</strong></label>
-                <select id="anschlag" name="anschlag">
-                    <option value="vorne">Vorne</option>
-                    <option value="hinten">Hinten</option>
-                </select><br><br>
-                <label for="entwaesserung"><strong>Entwässerung:</strong></label>
-                <select id="entwaesserung" name="entwaesserung">
-                    <option value="vorne">Vorne</option>
-                    <option value="unten">Unten</option>
-                </select><br><br>
-            </div>
-            <button type="submit">Senden</button>
+            <button type="submit"><strong>Absenden</strong></button>
         </form>
     </div>
     <script src="script.js"></script>
